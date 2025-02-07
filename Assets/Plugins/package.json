@@ -1,0 +1,14 @@
+{
+    "name": "com.nathanajacobs.visualstudiocodeopener",
+    "displayName": "Visual Studio Code Opener",
+    "version": "1.0.0",
+    "unity": "2018.2",
+    "author": {
+        "name": "Nathan Jacobs",
+        "url": "https://github.com/nathanajacobs"
+    },
+    "description": "This package allows you to explicitly specify which file types to open in Visual Studio Code, while having another default IDE configured in the External Tools settings.",
+	"dependencies": {
+      
+    }
+}
