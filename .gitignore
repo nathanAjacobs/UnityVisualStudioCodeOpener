@@ -141,4 +141,4 @@ src/VisualStudioCodeOpener/[Uu]ser[Ss]ettings/
 src/VisualStudioCodeOpener/*.sln
 src/VisualStudioCodeOpener/*.csproj
 src/VisualStudioCodeOpener/*.unitypackage
-!src/UniTask/Packages/
+!src/VisualStudioCodeOpener/Packages/
