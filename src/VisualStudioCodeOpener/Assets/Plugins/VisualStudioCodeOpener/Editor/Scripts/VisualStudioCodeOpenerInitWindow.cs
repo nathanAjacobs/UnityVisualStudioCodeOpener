@@ -53,7 +53,15 @@ namespace VisualStudioCodeOpener
                 fontSize = 14,
                 wordWrap = true
             };
-            GUILayout.Label("No path specified for Visual Studio Code Editor", labelStyle, GUILayout.ExpandWidth(true));
+
+            if (VisualStudioCodeOpenerPreferences.IsVSCodePathValid())
+            {
+                GUILayout.Label("Visual Studio Code path is configured", labelStyle, GUILayout.ExpandWidth(true));
+            }
+            else
+            {
+                GUILayout.Label("No path specified for Visual Studio Code Editor", labelStyle, GUILayout.ExpandWidth(true));
+            }
 
             GUILayout.Space(20); // Add more space between the label and the button
 
