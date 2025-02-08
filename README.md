@@ -2,6 +2,8 @@
 
 This package allows you to explicitly specify which file types to open in Visual Studio Code, while keeping another default IDE configured in the External Tools settings.
 
+This has been tested in Unity 2018.4.36 and Unity 6. It should work in Unity 2018.4.36 and up. It may work in earlier versions, however it has not been tested, so no guarantee.
+
 Currently only works for Windows, but Linux and Mac support could come later.
 
 <img src="https://github.com/user-attachments/assets/3a1288f6-4f09-4c13-834c-601db8e134b7" width="60%"/>
