@@ -130,6 +130,8 @@ UpgradeLog*.XML
 Assets/WSATestCertificate.pfx
 .vs/
 
+*.DS_Store
+
 # Unity
 
 # Unity

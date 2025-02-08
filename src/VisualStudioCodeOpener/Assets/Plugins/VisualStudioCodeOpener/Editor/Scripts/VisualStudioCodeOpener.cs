@@ -38,8 +38,17 @@ namespace VisualStudioCodeOpener
             string vsCodePath = VisualStudioCodeOpenerPreferences.GetVSCodePathFromEditorPrefs();
 
             Process process = new Process();
+
+#if UNITY_EDITOR_WIN
             process.StartInfo.FileName = vsCodePath;
             process.StartInfo.Arguments = $"\"{filePath}\"";
+#elif UNITY_EDITOR_OSX
+            process.StartInfo.FileName = $"{vsCodePath}/Contents/Resources/app/bin/code";
+            process.StartInfo.Arguments = $"--reuse-window \"{filePath}\"";
+#else
+            throw new PlatformNotSupportedException();
+#endif
+
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardError = true;

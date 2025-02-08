@@ -58,7 +58,7 @@ namespace VisualStudioCodeOpener
                     string path = EditorUtility.OpenFilePanel("Select Visual Studio Code Executable", "", "");
                     if (!string.IsNullOrEmpty(path))
                     {
-                        if (Path.GetFileName(path).Equals("code.exe", StringComparison.OrdinalIgnoreCase))
+                        if (Path.GetFileName(path).Equals(GetExecutableNameWithExtension(), StringComparison.OrdinalIgnoreCase))
                         {
                             vsCodePath = path;
                             SaveVSCodePathToEditorPrefs(vsCodePath);
@@ -185,6 +185,15 @@ namespace VisualStudioCodeOpener
             return extensionsString.Split(',');
         }
 
+        private static string GetExecutableNameWithExtension()
+        {
+#if UNITY_EDITOR_WIN
+            return "code.exe";
+#elif UNITY_EDITOR_OSX
+            return "Visual Studio Code.app";
+#endif
+            throw new PlatformNotSupportedException();
+        }
 
         private static void SaveExtensionsToEditorPrefs(string[] extensions)
         {
