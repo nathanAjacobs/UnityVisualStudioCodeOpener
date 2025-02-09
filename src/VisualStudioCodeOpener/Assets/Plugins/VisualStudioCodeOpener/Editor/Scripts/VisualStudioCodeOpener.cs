@@ -39,7 +39,7 @@ namespace VisualStudioCodeOpener
 
             Process process = new Process();
 
-#if UNITY_EDITOR_WIN
+#if UNITY_EDITOR_WIN || UNITY_EDITOR_LINUX
             process.StartInfo.FileName = vsCodePath;
             process.StartInfo.Arguments = $"\"{filePath}\"";
 #elif UNITY_EDITOR_OSX

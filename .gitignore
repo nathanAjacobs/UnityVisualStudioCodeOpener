@@ -131,8 +131,7 @@ Assets/WSATestCertificate.pfx
 .vs/
 
 *.DS_Store
-
-# Unity
+*.idea
 
 # Unity
 .vsconfig

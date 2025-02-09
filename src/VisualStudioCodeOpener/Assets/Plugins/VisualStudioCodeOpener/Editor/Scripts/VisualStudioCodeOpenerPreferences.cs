@@ -191,6 +191,8 @@ namespace VisualStudioCodeOpener
             return "code.exe";
 #elif UNITY_EDITOR_OSX
             return "Visual Studio Code.app";
+#elif UNITY_EDITOR_LINUX
+            return "code";
 #endif
             throw new PlatformNotSupportedException();
         }
