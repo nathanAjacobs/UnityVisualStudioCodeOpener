@@ -68,6 +68,8 @@ namespace VisualStudioCodeOpener
                             EditorUtility.DisplayDialog("Invalid Path", "Only a path to Visual Studio Code is valid.", "OK");
                         }
                     }
+
+                    GUIUtility.ExitGUI();
                 }
                 GUILayout.EndHorizontal();
 
@@ -98,6 +100,7 @@ namespace VisualStudioCodeOpener
                     if (tempExtension.Equals(".cs", StringComparison.OrdinalIgnoreCase))
                     {
                         EditorUtility.DisplayDialog("Invalid Extension", "C# files are not supported, they are intended to be opened by the default configured IDE.", "OK");
+                        GUIUtility.ExitGUI();
                     }
                     else if (IsValidExtension(tempExtension))
                     {
@@ -113,6 +116,7 @@ namespace VisualStudioCodeOpener
                     else
                     {
                         EditorUtility.DisplayDialog("Invalid Extension", "Extensions can only contain letters and numbers.", "OK");
+                        GUIUtility.ExitGUI();
                     }
                 }
                 GUILayout.EndHorizontal();
