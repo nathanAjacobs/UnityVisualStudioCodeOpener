@@ -52,4 +52,4 @@ Initial Setup
 
 3. Add desired file extensions to be opened with Visual Studio Code.<br><br>
 
-&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/3a1288f6-4f09-4c13-834c-601db8e134b7" width="60%"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/3a1288f6-4f09-4c13-834c-601db8e134b7" width="60%"/>
