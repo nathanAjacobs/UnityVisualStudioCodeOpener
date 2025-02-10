@@ -1,12 +1,16 @@
 # Unity Visual Studio Code Opener
 
-This package allows you to explicitly specify which file types to open in Visual Studio Code, while keeping another default IDE configured in the External Tools settings.
+Allows the ability to explicitly specify which file types to open in Visual Studio Code, while keeping another default code editor configured in Preferences -> External Tools.
 
-This has been tested in Unity 2018.4.36 and Unity 6. It should work in Unity 2018.4.36 and up. It may work in earlier versions, however it has not been tested, so no guarantee.
+Tested in Unity 2018.4.36 and Unity 6. It should work in Unity 2018.4.36 and up. It may work in earlier versions, however it has not been tested, so no guarantee.
 
-Currently only works for Windows, but Linux and Mac support could come later.
+Works on Windows, macOS, and Linux.
+<br><br>
 
-<img src="https://github.com/user-attachments/assets/3a1288f6-4f09-4c13-834c-601db8e134b7" width="60%"/>
+## Table of Contents
+- [Installation](#installation)
+- [Initial Setup](#initial-setup)
+<br><br>
 
 Installation
 ---
@@ -25,7 +29,27 @@ Add the following url to Package Manager:
 Alternatively add the following line to `Packages/manifest.json`:
 
 `"com.nathanajacobs.visual-studio-code-opener": "https://github.com/nathanAjacobs/UnityVisualStudioCodeOpener.git?path=src/VisualStudioCodeOpener/Assets/Plugins/VisualStudioCodeOpener"`
-
+<br><br>
 ### Install via .unitypackage
 
 Import asset package(`VisualStudioCodeOpener.*.*.*.unitypackage`) available in [UnityVisualStudioCodeOpener/releases](https://github.com/nathanAjacobs/UnityVisualStudioCodeOpener/releases).
+<br><br>
+
+Initial Setup
+---
+
+1. Open Preferences -> Visual Studio Code Opener
+
+2. Browse for Visual Studio Code executable, these are common Visual Studio Code installation paths:<br><br>
+   &nbsp;&nbsp;&nbsp;Windows:<br>
+   &nbsp;&nbsp;&nbsp;`C:\Users\{user}\AppData\Local\Programs\Microsoft VS Code\Code.exe`
+
+   &nbsp;&nbsp;&nbsp;Linux:<br>
+   &nbsp;&nbsp;&nbsp;`/usr/share/code/code`
+
+   &nbsp;&nbsp;&nbsp;macOS:<br>
+   &nbsp;&nbsp;&nbsp;`/Applications/Visual Studio Code.app`<br><br>
+
+3. Add desired file extensions to be opened with Visual Studio Code.<br><br>
+
+&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/3a1288f6-4f09-4c13-834c-601db8e134b7" width="60%"/>
