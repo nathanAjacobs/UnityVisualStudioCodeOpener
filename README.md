@@ -5,6 +5,8 @@ Allows the ability to explicitly specify which file types to open in Visual Stud
 Tested in Unity 2018.4.36 and Unity 6. It should work in Unity 2018.4.36 and up. It may work in earlier versions, however it has not been tested, so no guarantee.
 
 Works on Windows, macOS, and Linux.
+
+<img src="https://github.com/user-attachments/assets/3a1288f6-4f09-4c13-834c-601db8e134b7" width="60%"/>
 <br><br>
 
 ## Table of Contents
